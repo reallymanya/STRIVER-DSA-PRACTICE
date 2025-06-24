@@ -24,4 +24,6 @@ cout << endl;
 dq.push_back(5);
 cout << dq.front()<< endl;
 cout << dq.back()<< endl;
+
+//rest same as vector
 }

@@ -23,3 +23,4 @@ int main(){
         cout << hash[c] << endl;
     }
 }
+}

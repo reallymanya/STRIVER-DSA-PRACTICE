@@ -1,6 +1,7 @@
 #include "bits/stdc++.h"
 using namespace std;
 
+//SORTING 
 void algo(){
     int arr[] =  {5, 2, 8, 1, 3};
     sort(arr,arr+5);
@@ -50,21 +51,24 @@ for(auto i : a){
         cout << i.first << " " << i.second << " ";
     }
 
+    //COUNTING SET BITS
     int num = 7;
     int cnt = __builtin_popcount(num); //counts number of set bits in binary representation
 
     long long num1 = 1000000000000;
     long long cnt1 = __builtin_popcountll(num1); //counts number of set bits in binary representation for long long
 
-
+//PERMUTATIONS
 string s = "123";
 do{
     cout << s << endl;
 }while(next_permutation(s.begin(), s.end()));
 
+//MIN AND MAX 
 int maxi = *max_element(arr, arr+5); //finds max element in array
 int mini = *min_element(arr, arr+5); //finds min element in array
 cout << "Max: " << maxi << ", Min: " << mini << endl;
+
 }
 int main(){
     algo();

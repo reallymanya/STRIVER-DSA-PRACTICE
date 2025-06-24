@@ -1,5 +1,7 @@
-class Solution {
-public:
+#include <iostream>
+#include <map>
+using namespace std;
+
     int mostFrequentEven(vector<int>& nums) {
         map<int, int> mpp;
         for(int i = 0; i<nums.size(); i++){
@@ -21,4 +23,10 @@ public:
         }
         return maxEle;
     }
-};
+
+    int main() {
+        vector<int> nums = {1, 2, 2, 3, 4, 4, 4};
+        int result = mostFrequentEven(nums);
+        cout << "Most Frequent Even Element: " << result << endl;
+        return 0;
+    }
