@@ -3,7 +3,7 @@
 #include <map>
 using namespace std;
 
-// when there is positives and zeroes
+// most optimal when when there is positives and zeroes
 
 //problem link: 
 /*https://www.naukri.com/code360/problems/longest-subarray-with-sum-k_6682399
