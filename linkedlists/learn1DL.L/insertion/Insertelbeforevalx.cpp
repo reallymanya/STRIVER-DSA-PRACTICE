@@ -52,11 +52,13 @@ Node* insertvalbeforeX(Node* head, int val, int x){
     if(temp->next->data == x){
         Node* n = new Node(val,temp->next);
         temp->next = n;
+         return head;
         break;
     }
     temp = temp->next;
   }
-  return head;
+  cout << "Element " << x << " not found in the list.\n";
+    return head;
 }
 
 
@@ -64,6 +66,6 @@ int main(){
     vector<int> arr = {2,5,8,7};
     Node* head = convertArr2LL(arr);
     print(head);
-    head = insertvalbeforeX(head,3,5);
+    head = insertvalbeforeX(head,3,1);
     print(head);
 }
